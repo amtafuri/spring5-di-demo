@@ -13,7 +13,7 @@ public class GetterInjectedController {
     private GreetingService greetingService;
 
     public String sayHello(){
-        return greetingService.sayGreeting();
+        return greetingService.sayGreeting("Hello - I was injected by the getter");
     }
 
     @Autowired

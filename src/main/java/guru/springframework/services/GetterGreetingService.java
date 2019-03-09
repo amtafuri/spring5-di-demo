@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class GetterGreetingService implements GreetingService {
 
     @Override
-    public String sayGreeting() {
-        return "Hello - I was injected by the getter";
+    public String sayGreeting(String origin) {
+        return origin;
     }
 }
